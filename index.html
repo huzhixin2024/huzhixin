@@ -117,11 +117,12 @@
             font-size: 0.95rem;
         }
         .publication-item {
-            margin-bottom: 24px;
+            margin-bottom: 32px;
         }
         .publication-title {
             font-weight: 600;
             font-size: 1.05rem;
+            margin-bottom:6px;
         }
         .pub-links a {
             color: var(--link-color);
@@ -166,7 +167,6 @@
         <a href="#contact">Contact</a>
     </div>
 </nav>
-
 <div class="hero-section">
     <div>
         <img class="profile-img" src="profile.jpg" alt="Dr. Hu Zhixin">
@@ -174,7 +174,7 @@
     <div>
         <div class="hero-top">
             <h1>Dr. Hu Zhixin</h1>
-            <div class="subtitle">Faculty of Computer Science and Information Technology, University of Malaya<br>Artificial Intelligence · Generative AI · RAG · LLM Hallucination Mitigation</div>
+            <div class="subtitle"><br>Artificial Intelligence · Generative AI · RAG · LLM Hallucination Mitigation</div>
         </div>
         <div class="hero-brief">
 My research focuses on Retrieval‑Augmented Generation (RAG), large‑language‑model hallucination suppression, factual consistency for AIGC text generation, and hybrid sparse‑dense evidence retrieval for building reliable generative AI systems. I combine industrial‑grade AI engineering practice with academic research to develop high‑trustworthiness generative‑AI content‑creation solutions.
@@ -187,7 +187,6 @@ My research focuses on Retrieval‑Augmented Generation (RAG), large‑language�
         </div>
     </div>
 </div>
-
 <section id="about">
     <h2>About — Biography, Qualifications & Professional Background</h2>
     <div class="two-col">
@@ -218,7 +217,6 @@ My research focuses on Retrieval‑Augmented Generation (RAG), large‑language�
         </div>
     </div>
 </section>
-
 <section id="research">
     <h2>Research & Projects</h2>
     <div class="item-block">
@@ -226,7 +224,6 @@ My research focuses on Retrieval‑Augmented Generation (RAG), large‑language�
         <p>This work proposes an end‑to‑end RAG framework that suppresses LLM hallucinations collaboratively from both retrieval‑side and generation‑side perspectives. The architecture integrates two‑layer sparse‑dense hybrid evidence retrieval, attention‑driven dynamic evidence weighting‑and‑filtering, together with a factual‑consistency auxiliary joint loss function. Evaluated on TruthfulQA and HotpotQA benchmarks, the system achieves factual‑consistency F1‑score of 0.846 and hallucination‑detection AUC of 0.881. Compared against vanilla Llama‑3‑8B baseline, hallucination ratio decreases by 22.7%; compared with conventional single‑dense‑retrieval RAG, hallucination ratio drops by 13.5%.</p>
         <div class="meta-text">Keywords: Generative‑AI; Large Language Model; Retrieval‑Augmented Generation; Hallucination Mitigation; Factual Consistency; Hybrid Sparse‑Dense Retrieval</div>
     </div>
-
     <div class="item-block">
         <h4>Ongoing & Future Research Directions</h4>
         <ul>
@@ -237,20 +234,30 @@ My research focuses on Retrieval‑Augmented Generation (RAG), large‑language�
         </ul>
     </div>
 </section>
-
 <section id="publications">
     <h2>Publications</h2>
+    <!-- 第一篇论文 HER‑RAG -->
     <div class="publication-item">
         <div class="publication-title">Hybrid‑Evidence Retrieval RAG Model for Hallucination Mitigation in AIGC Text Generation</div>
         <div class="meta-text"><strong>Hu, Zhixin</strong>. Faculty of Computer Science and Information Technology, University of Malaya, Malaysia.</div>
         <p>Abstract: Generative Artificial Intelligence large language models deliver powerful free‑form text generation capabilities for intelligent writing, open‑domain question‑answering, and automated content creation. Nevertheless, the inherent hallucination phenomenon severely undermines factual reliability of generated outputs, where LLMs produce linguistically fluent but factually fabricated statements, fake citations, and erroneous causal deductions. This paper proposes HER‑RAG, a hybrid‑evidence retrieval enhanced RAG framework dedicated to hallucination suppression for AIGC text generation.</p>
         <div class="pub-links">
-            <a href="#">Download PDF</a>
-            <a href="#">View Abstract</a>
+            <a href="./her‑rag.pdf" download>📄 Download PDF</a>
+            <a href="#publications">View Abstract</a>
+        </div>
+    </div>
+
+    <!-- 第二篇论文 LW‑Diffusion -->
+    <div class="publication-item">
+        <div class="publication-title">LW‑Diffusion: An Optimized Lightweight AIGC Text‑to‑Image Diffusion Model for Resource‑Constrained Edge Devices</div>
+        <div class="meta-text"><strong>Hu, Zhixin</strong>. Faculty of Computer Science and Information Technology, University of Malaya, Malaysia.</div>
+        <p>Abstract: Generative‑AI text‑to‑image diffusion models possess powerful multi‑modal content‑generation capabilities. Nevertheless, vanilla diffusion models contain massive parameter volumes and demand numerous iterative sampling steps; most of them can only be deployed on high‑performance cloud GPU servers, which makes direct local execution infeasible for resource‑constrained edge‑side hardware such as mobile smartphones and embedded IoT devices. This paper proposes LW‑Diffusion, an integrated lightweight‑optimization solution for AIGC text‑to‑image diffusion models targeting memory‑ and compute‑limited edge‑side devices.</p>
+        <div class="pub-links">
+            <a href="./lw‑diffusion.pdf" download>📄 Download PDF</a>
+            <a href="#publications">View Abstract</a>
         </div>
     </div>
 </section>
-
 <section id="experience">
     <h2>Professional Experience</h2>
     <div class="item-block">
@@ -269,18 +276,15 @@ My research focuses on Retrieval‑Augmented Generation (RAG), large‑language�
         <p>Responsible for cloud‑computing and artificial‑intelligence‑related business development, technical architecture design and product management.</p>
     </div>
 </section>
-
 <section id="contact">
     <h2>Contact</h2>
     <div class="item-block">
         <p><strong>Email:</strong> huzhixin2007@126.com</p>
-        <p><strong>Affiliation:</strong> Faculty of Computer Science and Information Technology, University of Malaya, Malaysia</p>
         <p><strong>Mobile:</strong> +86 13761733415</p>
         <br>
         <p>I welcome academic collaboration, research discussions, and industry‑academia joint project inquiries focusing on Generative‑AI, RAG optimization and LLM hallucination‑mitigation topics.</p>
     </div>
 </section>
-
 <footer>
 © <span id="year"></span> Dr. Hu Zhixin. All rights reserved.
 <script>document.getElementById("year").innerText=new Date().getFullYear()</script>
